@@ -1,5 +1,18 @@
 # Google Research Football
 
+-------------------
+Ik heb een paar kleine aanpassingen gemaakt in football/third_party/gfootball_engine/CMakeLists.txt omdat ik gfootball niet kon installeren. Hierbij kreeg ik de 
+volgende melding: Could NOT find Boost: missing: python37 (found /usr/local/lib/cmake/Boost-1.73.0/BoostConfig.cmake (found version "1.73.0"))
+
+
+https://github.com/google-research/football/issues/51
+What you can do:
+
+look what library you have installed:
+(for example I have: /usr/lib/x86_64-linux-gnu/libboost_python-py36.so)
+and you can modify the CMakeLists.txt locally to use the correct version.
+-------------------
+
 This repository contains an RL environment based on open-source game Gameplay
 Football. <br> It was created by the Google Brain team for research purposes.
 
